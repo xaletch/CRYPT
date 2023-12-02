@@ -541,18 +541,15 @@
             font-weight: 600;
         }
     }
-    .home-hero_text.link_button {
-        filter: none;
-
-        &:hover {
-            filter: none;
-        }
-        .button {
-            clip-path: none;
-        }
-    }
     .link_button {
         margin: 0 auto;
+    }
+    .home-hero_text .link_button {
+        filter: none;
+        .button {
+            box-shadow: 0px 2px 20px rgba(252, 252, 3, 0.4);
+            clip-path: none;
+        }
     }
     .home-hero_main .hero_code-inner {
         width: 100%;
