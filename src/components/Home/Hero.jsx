@@ -5,10 +5,15 @@ import { Airdrop } from './Airdrop'
 export const Hero = () => {
   return (
     <div className='home-hero'>
-        <img className='hero_left-img' src='https://blast.io/images/frame-corner-sm-top-left.svg' alt='' />
-        <img className='hero_right-img' src='https://blast.io/images/frame-corner-sm-top-right.svg' alt='' />
-        <img className='hero_left-bottom-img' src='https://blast.io/images/frame-corner-sm-bottom-left.svg' alt='' />
-        <img className='hero_right-bottom-img' src='https://blast.io/images/frame-corner-sm-bottom-right.svg' alt='' />
+        <img className='hero_left-img desc' src='https://blast.io/images/frame-corner-sm-top-left.svg' alt='' />
+        <img className='hero_right-img desc' src='https://blast.io/images/frame-corner-sm-top-right.svg' alt='' />
+        <img className='hero_left-bottom-img desc' src='https://blast.io/images/frame-corner-sm-bottom-left.svg' alt='' />
+        <img className='hero_right-bottom-img desc' src='https://blast.io/images/frame-corner-sm-bottom-right.svg' alt='' />
+
+        <img className='hero_left-img mob' src='https://blast.io/images/frame-corner-top-left.svg' alt='' />
+        <img className='hero_right-img mob' src='https://blast.io/images/frame-corner-top-right.svg' alt='' />
+        <img className='hero_left-bottom-img mob' src='https://blast.io/images/frame-corner-bottom-left.svg' alt='' />
+        <img className='hero_right-bottom-img mob' src='https://blast.io/images/frame-corner-bottom-right.svg' alt='' />
         <div className='home-hero_info'>
             <div className='home-hero_info-inner'>
                 <div className='text-info count'>TVL / $657,561,860</div>

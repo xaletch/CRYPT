@@ -15,6 +15,10 @@
         border: 2px solid #404833;
         box-sizing: border-box;
 
+        .mob {
+            display: none;
+        }
+
         .hero_left-img {
             max-width: 597px;
             height: auto;
@@ -41,6 +45,40 @@
         }
         .hero_right-bottom-img {
             max-width: 465px;
+            height: auto;
+            position: absolute;
+            right: -13px;
+            bottom: -13px;
+            z-index: 99;
+        }
+
+
+        .hero_left-img.mob {
+            max-width: 150px;
+            height: auto;
+            position: absolute;
+            top: -13px;
+            left: -13px;
+            z-index: 99;
+        }
+        .hero_right-img.mob {
+            max-width: 211px;
+            height: auto;
+            position: absolute;
+            top: -13px;
+            right: -13px;
+            z-index: 99;
+        }
+        .hero_left-bottom-img.mob {
+            max-width: 150px;
+            height: auto;
+            position: absolute;
+            left: -13px;
+            bottom: -13px;
+            z-index: 99;
+        }
+        .hero_right-bottom-img.mob {
+            max-width: 211px;
             height: auto;
             position: absolute;
             right: -13px;
@@ -434,10 +472,20 @@
             display: block;
         }
     }
-
+    .home-hero_line {
+        display: none;
+    }
     .home-hero_info-inner {
         .total-users {
             display: none;
+        }
+    }
+    .desc {
+        display: none;
+    }
+    .home-hero {
+        .mob {
+            display: block;
         }
     }
 }
@@ -465,6 +513,9 @@
             display: none;
         }
     }
+    .home-hero_block {
+        margin-top: 120px;
+    }
 
     .home-hero {
         background: linear-gradient(180deg, rgba(17, 20, 12, 0.24) 27.54%, rgba(17, 20, 12, 0.37) 58.11%, rgba(17, 20, 12, 0.63) 100%);
@@ -474,7 +525,6 @@
         padding: 24px 24px 0 24px;
         margin: 0;
     }
-    
     .home-hero_text {
         h1 {
             max-width: 434px;
@@ -489,6 +539,16 @@
             line-height: 160%;
             letter-spacing: 0;
             font-weight: 600;
+        }
+    }
+    .home-hero_text.link_button {
+        filter: none;
+
+        &:hover {
+            filter: none;
+        }
+        .button {
+            clip-path: none;
         }
     }
     .link_button {
@@ -523,5 +583,11 @@
                 font-weight: 600;
             }
         }
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .home {
+        height: 100%;
     }
 }
